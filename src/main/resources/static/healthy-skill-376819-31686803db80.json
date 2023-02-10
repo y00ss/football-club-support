@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "healthy-skill-376819",
+  "private_key_id": "31686803db807688689be67c0c82df6065fac901",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCiPYLJtRjzEJJV\nvcUXvgtN7yRgMLWxfvHz17gTwfqupuHZXy0IvRaD7/igHXj6SwPiyvrg6+PSrmTK\ncbehgogvRHkv/Nif9IyKBc7PHjt4e1SiQBEISD4JUmxsZAkqoHY/o328gdK53+l6\n53HkG6cwjwRUIW1hi+4yIDefAZMU4u3Wi6QYbpye32BrtvEy2tRK6NUE5GtGfxiI\nXIrpLuf8G089pKZkDBzvTWlocTc6knDaur64iGoAkII753fd+4+hTw8XCBQ9XY0B\nO//p71kCzzwvUeWv0Yz716OXjQhyKNpk+cc3X1jL8IYtL7q9iKqWfabUMRZqZZl3\nIDxViBuDAgMBAAECggEAAIzS8n2cSFyYO7BL4CaFwdDxchrj9wgaa88Gs2Lex3YV\nZOcucopLsfwXQo+Cz7WadQhmvBnDLjNgiw7CYw4e/Bas7QrwOECEi5OuTnaG1OJG\nKxVnQ3xzpFgHTkto9WOD/8HEJ7Cg/3D5jFHe5HYpA+jRfmmjO/ARoOXhl99EjBWu\nqs6fxUR+lN9pbPhDfM6OHn5p9YdJ5Vok5Qjq7d4poasc4VYWynLFfl5VW1Mded34\nrA8Nt7x5czNpx0PuzpeL+A+bA99r+HRfM2Xm94+BJt4ZaVqZelK9mCsn3dS9J+36\nKdCiDBG0vTiZmV8aa0gnaITzxrM7pVR9pnrQde6ZwQKBgQDSAoq6a1xs3Vg6NX7i\noSrGm4NuUo9wPR3UpUhYe1zb8y19Daw6c5mvwIN5sQao1pd5oQz0s38KJyawIc3y\nvYupv/gGBcJJIFMIBSe5sgW1/xgnfFY+Pjx0FzLsG5jsKW04NgTgSJlNO2au1pJi\nGfos9qDypofIhT55gbbRt4NzMQKBgQDFxO8G59LvuiNdUEk8RGPMsFvIv7B5gpp2\nbqI+vg5J1Z+TlHpGsmBNjVX0mOtFWJx7X9S7SPgADoFPcMa7F+eNE+obvNnNMjuL\nrVE3UJft5O01ljq557CZXJBNkg4EOu/LK18M7hZ8Xl3Ydm1SfuEhDDm9rI8yUxuw\nAAiHtgUE8wKBgGNDolEFKBWo9eflm0kBxtdDcHc3/OafbLczPKPeA4FPSyP9z3d9\nZppFE5/0heJONCDgd+A964FgChBcmhzvbNFalKA8Hp4z8isrTKCgPcTNg5w+UAFx\np190C7TAQqL13dMg7WMZzaRMvHdNorlN8AtKs76d6jZkjKggIMq1xCMxAoGAMnbt\nE1MGZTuXGJGLDoDZAnsiAJjBXFAyP/Q9HEt88+Q54vupM+8CWeetvktjBX/19hle\n/CdDeSg6YN4DJ+ySnlItk8Rdw1mFDkA8kCPVkNOwn9Lky1lOm+Odwt15DCVJ2QsJ\nJxB91mByC/E0Ni/AHKG0/ixRIeNJFmD7zD1rDHcCgYBWtJRsRawh3Op3r1Ia6nt5\nZsAK2IyDEvwl+egGzdUB9N1OX98XKo5wrmIPlT+E4NRJALAdqqNPpzZ1NdkZa4V3\nP6K6/YwsPcCSvvztnITU7p3qvRkKtO0dMVAtJIQeQ9hFWcyLblcuskygsbmvs/o0\ndkCS9EQeKlEwbDcmhgJUmg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "club-tifosi-auth@healthy-skill-376819.iam.gserviceaccount.com",
+  "client_id": "109115535207189577240",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/club-tifosi-auth%40healthy-skill-376819.iam.gserviceaccount.com"
+}
