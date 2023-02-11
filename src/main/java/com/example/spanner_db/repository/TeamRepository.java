@@ -4,10 +4,12 @@ import com.example.spanner_db.entity.Team;
 import com.google.cloud.spring.data.spanner.repository.SpannerRepository;
 import com.google.cloud.spring.data.spanner.repository.query.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 
+@Repository
 public interface TeamRepository extends SpannerRepository<Team, Integer> {
 
     List<Team> findByCity(String city);
