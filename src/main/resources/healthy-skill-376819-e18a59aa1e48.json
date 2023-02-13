@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "healthy-skill-376819",
+  "private_key_id": "e18a59aa1e48023c03cc6126b4027fea7fb7bbff",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQpFhMYLCYhZUp\nobAphXaBjQ4Xcb3IPVNBr9wOhI94KZgKI8rJP9nJhHn5QCKQnsGSsCBOvm+5asaG\nwohhfF39JG+UWcKgLiTm01/YIyfX+vvdlMbKOcNFw8rB5RFxfYrXqnZa8pDzIx7A\nhA0c6gaaH+bVllGfWKrs/lEYOcL99P/PSf0NCdh/rd8PYVukOGiB/42dwqjh9QWo\n8SRA+ApLoaBCoizFh9uk6qDswKTZ+P21uhUtHoQOrRkysE/V5cKeHH267JNTzRAH\nZIXzNdv+HjQ2gJ+t4LoKp4niUQw6F2mMEMkd0S/B8gHxlQR20BRPGV3E2CT4lwye\n6zGNVkXLAgMBAAECggEARWlXgtlsBuHyFO6Yt8eR/FmcBYquk65rQ2ApOp85R8W2\nsjDkJv3aC6PKHHUMysY2KgH0TZ4ndy0hrPWM/7mrXys+/8C48idH2Y8axMI1YDI8\nlqQHWoHLCCuyCb2WhwY4KbWpOGqYdHsLoQqNfkARQDc6yXX/455RBxU4j3GwAGJm\nsa3u9DGURkSVN28sZ4evO09uqs1ppOPhP8OSPPa5BbNJjX6VvO8244WyzNuj9rwT\ni5gl3PZD9vOWKCaIStVJ6p6tNpYaNYeUafTywxoMtin3yY33g6/CHUmlbNY4ETtJ\nPvb7F0yrlf3Og8rxBceR1y9dSnAQoYM675aWClHLGQKBgQD0P8IdFxN9BocsFWsZ\ncFNKhsT7CyYQXRD258Y5Gf0RKxevMuIDWKq/0HBWT+Fy17nIuvWyHQoFEriBkpj6\nZ1OPGofz+o1I0ilBHxQoL8yBaF0SjzeMGcB7UJunTMkHxX7qHD/wrVWteumNLOoC\nnYTNzhGC4BhjPbeJm5aEAo0GbQKBgQDargogra/nHeLZ3TPSOjv+y8YJ1BHUVqiM\n0MYzLhugXjye8arTJIBaWEfqp5kx0QarF1l8qHKy8BQL55C5UwfLmk4IRlnPZqwQ\nLBTmGuZSI+yfYBZ+Rxk21f53yhoqPv3YSCN7RGtdnNvbH6XFzlgQ/TfZRooz9M6r\nT94U0k46FwKBgQDmM9F4KW+svqJX4jf22e8mpq6xDWjqs0xx6TDiUKQ7sim4bnSm\nQsNr1cCLGO6blsb7cXpwTP5MmcBcHxcfqpMOpSrNwK+4mptXTTtqROKydPKDs4fe\n+8Z2cxrBK5WtRW7Ap69732KJBvdon5ROsregYUAP4bYakuiRQZszAFR6YQKBgAf3\n136hVYuCV0XA/aZnYNBD9I9fHtcx4SpgYRh0UaViSasw+xx+c/7WwKgYO0jJaQjK\n7QPRz3wdq11Trr5R/DK7CKTci2E3SIW+VXSc/k9356NXCPrI9G4/FeqffpyTdwRu\nfHx9XbwnfwtY991hS2wzDdno7BhAj1dGrbzsfNU5AoGAMs3ePhyG3Fur+dlwJlhu\ny+AJE+og//Pu5iyEga2+LVwHgLDeFNceBqC8xAK6jfVSE7jeuw/zJMst9ceGemFc\nB3JDXGBnf6aBpLOd1hcEEc2pcoenPH+CmYFb0HD/dhZVDI/slZYkvCpB7wlp0NQ2\nFgIIGMKsix8Pn5gqpzgFHAk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spanner-demo@healthy-skill-376819.iam.gserviceaccount.com",
+  "client_id": "102985961001208828841",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spanner-demo%40healthy-skill-376819.iam.gserviceaccount.com"
+}

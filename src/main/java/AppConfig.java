@@ -20,6 +20,7 @@ public class AppConfig {
     @Bean
     public Spanner spanner() throws IOException {
         GoogleCredentials credentials = GoogleCredentials.fromStream(Files.newInputStream(Paths.get(credentialsPath)));
+
         SpannerOptions options = SpannerOptions.newBuilder().setCredentials(credentials).build();
         return options.getService();
     }
