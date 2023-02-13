@@ -1,7 +1,6 @@
 package com.example.spanner_db.controller;
 
-import com.example.spanner_db.dto.FanData;
-import com.example.spanner_db.entity.Fan;
+import com.example.spanner_db.dao.FanData;
 import com.example.spanner_db.service.FanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

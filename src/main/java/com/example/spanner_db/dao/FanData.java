@@ -1,4 +1,4 @@
-package com.example.spanner_db.dto;
+package com.example.spanner_db.dao;
 
 import lombok.Data;
 
@@ -6,7 +6,6 @@ import lombok.Data;
 public class FanData {
 
     private String id;
-
 
     private String name;
     private String surname;

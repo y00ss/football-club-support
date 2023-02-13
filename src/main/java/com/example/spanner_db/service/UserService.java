@@ -1,5 +1,6 @@
 package com.example.spanner_db.service;
 
+import com.example.spanner_db.dto.UserRegister;
 import com.example.spanner_db.entity.Fan;
 import com.example.spanner_db.entity.Team;
 import com.example.spanner_db.entity.User;
@@ -16,19 +17,20 @@ import com.google.cloud.spring.data.spanner.core.SpannerQueryOptions;
 import com.google.cloud.spring.data.spanner.core.SpannerTemplate;
 
 import java.util.List;
+import java.util.UUID;
 
 @Component
 @Service
 public class UserService {
 
     @Autowired
-     UserRepository userRepository;
+    UserRepository userRepository;
 
     @Autowired
     FanRepository fanRepository;
 
     @Autowired
-     FanService fanService;
+    FanService fanService;
 
 
     @Autowired
@@ -38,45 +40,47 @@ public class UserService {
     SpannerTemplate spannerTemplate;
 
 
-    public List<User> getAllUser(){
+    public List<User> getAllUser() {
         return (List<User>) userRepository.findAll();
     }
 
-    public User getUser(String p1){
+    public User getUser(String p1) {
 
-        return userRepository.findByQueryUserById(Integer.parseInt(p1));
+        return userRepository.findByQueryUserById((p1));
     }
 
-    public User saveUser(User user){
+    public User saveUser(UserRegister user) {
 
+        User newUser = new User();
         Fan fan = new Fan();
 
-        int idUser = getAllUser().size() + 1;
+        // Data user
+        newUser.setName(user.getName());
+        newUser.setSurname(user.getSurname());
+        newUser.setCity(user.getCity());
+        newUser.setBirth(user.getBirth());
+
+        // Data fan
+        fan.setUser_id(newUser.getId());
+        fan.setTeam_id(user.getTeamId());
+        fan.setSubscriber(user.isSubscriber());
+
+        userRepository.save(newUser);
+        fanService.saveFan(fan);
 
 
-        //user.setId(UUID.randomUUID());
-
-        user.setId(idUser);
-
-        fan.setUser_id(idUser);
-        fan.setTeam_id(Integer.parseInt(user.getTeamId()));
-
-        user = userRepository.save(user);
-
-        fan = fanService.saveFan(fan);
-
-        return user;
+        return newUser;
 
     }
 
-    public void deleteUser(String idUser, String nameTeam){
+    public void deleteUser(String idUser, String nameTeam) {
 
 
         Team team = teamService.getTeamByName(nameTeam);
-        int user = Integer.parseInt(idUser);
 
-        deleteFanByUserId(user, team.getId());
-        deleteUserById(user);
+
+        deleteFanByUserId(idUser, team.getId());
+        deleteUserById(idUser);
 
         /*System.out.println(idUser);
         fanRepository.deleteByQuery((long) idUser);
@@ -84,14 +88,19 @@ public class UserService {
     }
 
     @Transactional
-    public void deleteUserById(int idUser) {
+    public void deleteUserById(String idUser) {
         Key key = Key.newBuilder().append(idUser).build();
         spannerTemplate.delete(User.class, key);
     }
 
     @Transactional
-    public void deleteFanByUserId(long userId, long teamId) {
-        Key key = Key.newBuilder().append(userId).append(teamId).build();
+    void deleteFanByUserId(String userId, int idTeam) {
+
+        Key key = Key.newBuilder()
+                .append(userId)
+                .append(idTeam)
+                .build();
+
         spannerTemplate.delete(Fan.class, key);
     }
 

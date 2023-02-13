@@ -1,5 +1,6 @@
 package com.example.spanner_db.controller;
 
+import com.example.spanner_db.dto.UserRegister;
 import com.example.spanner_db.entity.User;
 import com.example.spanner_db.repository.TestRepo;
 import com.example.spanner_db.service.UserService;
@@ -28,7 +29,7 @@ public class UserController {
 
     // todo fai la dao
     @PostMapping
-    private User createUser(@RequestBody User user) {
+    private User createUser(@RequestBody UserRegister user) {
         return userService.saveUser(user);
     }
 

@@ -11,7 +11,7 @@ public interface FanRepository extends SpannerRepository<Fan, Long> {
 
 
     @Modifying
-    @Query("DELETE FROM fan  WHERE user_id = $1")
+    @Query("DELETE FROM fans  WHERE user_id = $1")
     void deleteByQuery(@Param("p1") long idFan);
 
 /*  void deleteFanByUserId(long idUser);

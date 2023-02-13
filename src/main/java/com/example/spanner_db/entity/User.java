@@ -10,16 +10,17 @@ import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 
 @Table(name = "users")
 @Data
-@AllArgsConstructor
 public class User {
+
 
     @PrimaryKey
     @Column(name = "id")
-    private int id;
+    private String id;
 
     private String name, surname;
 
@@ -32,7 +33,8 @@ public class User {
     @NotMapped
     private String teamId;
 
-    public User(String name, String surname, LocalDate birth, String city, String teamId) {
+    public User(String id,String name, String surname, LocalDate birth, String city, String teamId) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.birth = birth;
@@ -40,5 +42,7 @@ public class User {
         this.teamId = teamId;
     }
 
-    public User(){}
+    public User(){
+        this.id = UUID.randomUUID().toString();
+    }
 }

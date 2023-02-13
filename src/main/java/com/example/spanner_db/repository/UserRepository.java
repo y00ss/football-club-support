@@ -10,11 +10,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public interface UserRepository  extends SpannerRepository<User, Integer> {
+public interface UserRepository  extends SpannerRepository<User, String> {
 
 
     @Query("SELECT * FROM users u WHERE u.id = $1")
-    User findByQueryUserById(@Param("p1") int idUser);
+    User findByQueryUserById(@Param("p1") String idUser);
 
 
     @Transactional

@@ -1,6 +1,6 @@
 package com.example.spanner_db.service;
 
-import com.example.spanner_db.dto.FanData;
+import com.example.spanner_db.dao.FanData;
 import com.example.spanner_db.entity.Fan;
 import com.example.spanner_db.repository.FanDataJoinRepository;
 import com.example.spanner_db.repository.FanRepository;
